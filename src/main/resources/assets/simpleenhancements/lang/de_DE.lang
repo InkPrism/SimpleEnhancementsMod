@@ -1,0 +1,20 @@
+item.granite_pickaxe.name=Granit Spitzhacke
+item.diorite_pickaxe.name=Diorit Spitzhacke
+item.andesite_pickaxe.name=Andesit Spitzhacke
+item.granite_sword.name=Granit Schwert
+item.diorite_sword.name=Diorit Schwert
+item.andesite_sword.name=Andesit Schwert
+item.granite_shovel.name=Granit Schaufel
+item.diorite_shovel.name=Diorit Schaufel
+item.andesite_shovel.name=Andesit Schaufel
+item.granite_axe.name=Granit Axt
+item.diorite_axe.name=Diorit Axt
+item.andesite_axe.name=Andesit Axt
+item.granite_hoe.name=Granit Harke
+item.diorite_hoe.name=Diorit Harke
+item.andesite_hoe.name=Andesit Harke
+
+achievement.finallyTheyveAPurpose=§aEndlich... ein Sinn!
+achievement.finallyTheyveAPurpose.desc=§aWuuhu!
+
+itemGroup.tabSimpleEnhancements=§2Simple §aEnhancements §2Mod

@@ -1,0 +1,18 @@
+[
+    {
+        "modid": "simpleenhancements",
+        "name": "§2Simple §aEnhancements §2Mod",
+        "description": "§8This mod adds some enhancements to the vanilla version.\nView Documentation for more details.",
+        "version": "${version}",
+        "mcversion": "${mcversion}",
+        "url": "www.dotsilver.net",
+        "updateUrl": "",
+        "authorList": [
+            "Dot_Silver"
+        ],
+        "credits": "Textures by Dot_Silver; Made by Dot_Silver",
+        "logoFile": "assets/simpleenhancements/simpleenhancements-logo.png",
+        "screenshots": [],
+        "dependencies": []
+    }
+]
