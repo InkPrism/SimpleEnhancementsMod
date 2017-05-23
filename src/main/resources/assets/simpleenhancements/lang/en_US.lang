@@ -1,21 +1,23 @@
+# Granite
 item.granite_pickaxe.name=Granite Pickaxe
-item.diorite_pickaxe.name=Diorite Pickaxe
-item.andesite_pickaxe.name=Andesite Pickaxe
 item.granite_sword.name=Granite Sword
-item.diorite_sword.name=Diorite Sword
-item.andesite_sword.name=Andesite Sword
 item.granite_shovel.name=Granite Shovel
-item.diorite_shovel.name=Diorite Shovel
-item.andesite_shovel.name=Andesite Shovel
 item.granite_axe.name=Granite Axe
-item.diorite_axe.name=Diorite Axe
-item.andesite_axe.name=Andesite Axe
 item.granite_hoe.name=Granite Hoe
+# Diorite
+item.diorite_pickaxe.name=Diorite Pickaxe
+item.diorite_sword.name=Diorite Sword
+item.diorite_shovel.name=Diorite Shovel
+item.diorite_axe.name=Diorite Axe
 item.diorite_hoe.name=Diorite Hoe
+# Andesite
+item.andesite_pickaxe.name=Andesite Pickaxe
+item.andesite_sword.name=Andesite Sword
+item.andesite_shovel.name=Andesite Shovel
+item.andesite_axe.name=Andesite Axe
 item.andesite_hoe.name=Andesite Hoe
-
-
+# Achievements
 achievement.finallyTheyveAPurpose=§aFinally they've a purpose!
 achievement.finallyTheyveAPurpose.desc=§aWoooh!
-
+# Tab title
 itemGroup.tabSimpleEnhancements=§2Simple §aEnhancements §2Mod
