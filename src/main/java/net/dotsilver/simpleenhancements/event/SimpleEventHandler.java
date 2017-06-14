@@ -14,7 +14,8 @@ public class SimpleEventHandler {
 		// Is it the end portal frame?
 		if (event.getState().getBlock() == Blocks.END_PORTAL_FRAME) {
 			// Check, if the mainhand carries the right tool
-			if (mainhand != null && mainhand.getItem() == Items.DIAMOND_PICKAXE) {
+			//if (mainhand != null && mainhand.getItem() == Items.DIAMOND_PICKAXE) {
+			if (mainhand != null) {
 				int endportalframe_state = Blocks.END_PORTAL_FRAME.getMetaFromState(event.getState());
 				// state => over 5, 6, ... = with eye; 1, 2, 3, 4 = without eye
 				if (endportalframe_state > 4) {
