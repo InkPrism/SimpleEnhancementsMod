@@ -3,6 +3,7 @@ package net.dotsilver.simpleenhancements;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import net.dotsilver.simpleenhancements.event.RightClickChickenEvent;
 import net.dotsilver.simpleenhancements.event.SimpleEventHandler;
 import net.dotsilver.simpleenhancements.init.ADGItems;
 import net.dotsilver.simpleenhancements.init.CraftingRegistry;
@@ -46,6 +47,9 @@ public class SimpleEnhancements {
 		proxy.registerRenders();
 		CraftingRegistry.register();
 //		MinecraftForge.EVENT_BUS.register(new AchievementHandler());
+		if (Config.pluckFeathers) {
+			MinecraftForge.EVENT_BUS.register(new RightClickChickenEvent());
+		}
 		if(Config.breakableEndPortalFrame) {
 			MinecraftForge.EVENT_BUS.register(new SimpleEventHandler());
 			Blocks.END_PORTAL_FRAME.setHardness(25);

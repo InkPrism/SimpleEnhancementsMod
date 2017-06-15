@@ -23,6 +23,7 @@ public class Config {
 	public static boolean recipeNetherWart;
 	public static boolean recipesMusicDiscs;
 	public static boolean breakableEndPortalFrame;
+	public static boolean pluckFeathers;
 	
 	public static void loadConfig(File file) {
 		if (cfg == null) {
@@ -48,6 +49,7 @@ public class Config {
 		recipeNetherWart = cfg.get(CAT_GENERAL, "recipeNetherWart", true, "Add recipe for Nether Warts.").setRequiresMcRestart(true).getBoolean();
 		recipesMusicDiscs = cfg.get(CAT_GENERAL, "recipesMusicDiscs", true, "Add recipes for Music Discs.").setRequiresMcRestart(true).getBoolean();
 		breakableEndPortalFrame = cfg.get(CAT_GENERAL, "breakableEndPortalFrame", true, "Make End Portal Frames breakable.").setRequiresMcRestart(true).getBoolean();
+		pluckFeathers = cfg.get(CAT_GENERAL, "pluckFeathers", true, "Rightclicking on chicken gives you feathers. Pluck it!").setRequiresMcRestart(true).getBoolean();
 		
 		if (cfg.hasChanged())
 			cfg.save();
