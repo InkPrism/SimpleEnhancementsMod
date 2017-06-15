@@ -1,8 +1,11 @@
 package net.dotsilver.simpleenhancements;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import net.dotsilver.simpleenhancements.event.SimpleEventHandler;
+import net.dotsilver.simpleenhancements.init.ADGItems;
 import net.dotsilver.simpleenhancements.init.CraftingRegistry;
-import net.dotsilver.simpleenhancements.init.SimpleEnhancementsItems;
 import net.dotsilver.simpleenhancements.proxy.CommonProxy;
 import net.dotsilver.simpleenhancements.stats.AchievementHandler;
 import net.minecraft.init.Blocks;
@@ -22,14 +25,18 @@ public class SimpleEnhancements {
 	
 	public static final SimpleEnhancementsTab tabSimpleEnhancements = new SimpleEnhancementsTab("tabSimpleEnhancements");
 	
-//	@Instance(Reference.MOD_ID)
-//	public static SimpleEnhancements instance;
+	@Mod.Instance(Reference.MOD_ID)
+	public static SimpleEnhancements instance;
+	
+	public static final Logger logger = LogManager.getLogger(Reference.NAME);
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
-		SimpleEnhancementsItems.init();
-		SimpleEnhancementsItems.register();
+		Config.loadConfig(event.getSuggestedConfigurationFile());
+		if (Config.recipesADGTools) {
+			ADGItems.init();
+		}
 //		AchievementHandler.register();
 	}
 	
@@ -38,10 +45,11 @@ public class SimpleEnhancements {
 	{
 		proxy.registerRenders();
 		CraftingRegistry.register();
-		MinecraftForge.EVENT_BUS.register(new AchievementHandler());
-		MinecraftForge.EVENT_BUS.register(new SimpleEventHandler());
-		
-		Blocks.END_PORTAL_FRAME.setHardness(25);
+//		MinecraftForge.EVENT_BUS.register(new AchievementHandler());
+		if(Config.breakableEndPortalFrame) {
+			MinecraftForge.EVENT_BUS.register(new SimpleEventHandler());
+			Blocks.END_PORTAL_FRAME.setHardness(25);
+		}
 	}
 	
 	@EventHandler

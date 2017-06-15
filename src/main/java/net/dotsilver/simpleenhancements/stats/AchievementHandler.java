@@ -1,6 +1,6 @@
 package net.dotsilver.simpleenhancements.stats;
 
-import net.dotsilver.simpleenhancements.init.SimpleEnhancementsItems;
+import net.dotsilver.simpleenhancements.init.ADGItems;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.Achievement;
@@ -20,20 +20,20 @@ public class AchievementHandler {
 	
 	@SubscribeEvent
 	public void AGD(ItemCraftedEvent event){
-		if(event.crafting.getItem() == SimpleEnhancementsItems.andesite_pickaxe){event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
-		else if (event.crafting.getItem() == SimpleEnhancementsItems.granite_pickaxe) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
-		else if (event.crafting.getItem() == SimpleEnhancementsItems.diorite_pickaxe) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
-		else if(event.crafting.getItem() == SimpleEnhancementsItems.andesite_sword){event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
-		else if (event.crafting.getItem() == SimpleEnhancementsItems.granite_sword) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
-		else if (event.crafting.getItem() == SimpleEnhancementsItems.diorite_sword) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
-		else if(event.crafting.getItem() == SimpleEnhancementsItems.andesite_shovel){event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
-		else if (event.crafting.getItem() == SimpleEnhancementsItems.granite_shovel) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
-		else if (event.crafting.getItem() == SimpleEnhancementsItems.diorite_shovel) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
-		else if(event.crafting.getItem() == SimpleEnhancementsItems.andesite_axe){event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
-		else if (event.crafting.getItem() == SimpleEnhancementsItems.granite_axe) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
-		else if (event.crafting.getItem() == SimpleEnhancementsItems.diorite_axe) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
-		else if(event.crafting.getItem() == SimpleEnhancementsItems.andesite_hoe){event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
-		else if (event.crafting.getItem() == SimpleEnhancementsItems.granite_hoe) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
-		else if (event.crafting.getItem() == SimpleEnhancementsItems.diorite_hoe) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
+		if(event.crafting.getItem() == ADGItems.andesite_pickaxe){event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
+		else if (event.crafting.getItem() == ADGItems.granite_pickaxe) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
+		else if (event.crafting.getItem() == ADGItems.diorite_pickaxe) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
+		else if(event.crafting.getItem() == ADGItems.andesite_sword){event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
+		else if (event.crafting.getItem() == ADGItems.granite_sword) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
+		else if (event.crafting.getItem() == ADGItems.diorite_sword) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
+		else if(event.crafting.getItem() == ADGItems.andesite_shovel){event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
+		else if (event.crafting.getItem() == ADGItems.granite_shovel) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
+		else if (event.crafting.getItem() == ADGItems.diorite_shovel) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
+		else if(event.crafting.getItem() == ADGItems.andesite_axe){event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
+		else if (event.crafting.getItem() == ADGItems.granite_axe) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
+		else if (event.crafting.getItem() == ADGItems.diorite_axe) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
+		else if(event.crafting.getItem() == ADGItems.andesite_hoe){event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
+		else if (event.crafting.getItem() == ADGItems.granite_hoe) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
+		else if (event.crafting.getItem() == ADGItems.diorite_hoe) {event.player.addStat(AchievementHandler.finallyTheyveAPurpose, 1);}
 	}
 }

@@ -1,5 +1,6 @@
 package net.dotsilver.simpleenhancements.init;
 
+import net.dotsilver.simpleenhancements.Config;
 import net.dotsilver.simpleenhancements.Reference;
 import net.dotsilver.simpleenhancements.SimpleEnhancements;
 import net.dotsilver.simpleenhancements.items.ItemAndesiteAxe;
@@ -23,7 +24,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class SimpleEnhancementsItems {
+public class ADGItems {
 	
 	public static Item granite_pickaxe;
 	public static Item diorite_pickaxe;
@@ -42,25 +43,27 @@ public class SimpleEnhancementsItems {
 	public static Item andesite_hoe;
 	
 	public static void init() {
-		granite_pickaxe = new ItemGranitePickaxe(ToolMaterial.STONE).setUnlocalizedName("granite_pickaxe").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
-		diorite_pickaxe = new ItemDioritePickaxe(ToolMaterial.STONE).setUnlocalizedName("diorite_pickaxe").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
-		andesite_pickaxe = new ItemAndesitePickaxe(ToolMaterial.STONE).setUnlocalizedName("andesite_pickaxe").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
+			granite_pickaxe = new ItemGranitePickaxe(ToolMaterial.STONE).setUnlocalizedName("granite_pickaxe").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
+			diorite_pickaxe = new ItemDioritePickaxe(ToolMaterial.STONE).setUnlocalizedName("diorite_pickaxe").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
+			andesite_pickaxe = new ItemAndesitePickaxe(ToolMaterial.STONE).setUnlocalizedName("andesite_pickaxe").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
 		
-		andesite_sword = new ItemAndesiteSword(ToolMaterial.STONE).setUnlocalizedName("andesite_sword").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
-		diorite_sword = new ItemDioriteSword(ToolMaterial.STONE).setUnlocalizedName("diorite_sword").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
-		granite_sword = new ItemGraniteSword(ToolMaterial.STONE).setUnlocalizedName("granite_sword").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
+			andesite_sword = new ItemAndesiteSword(ToolMaterial.STONE).setUnlocalizedName("andesite_sword").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
+			diorite_sword = new ItemDioriteSword(ToolMaterial.STONE).setUnlocalizedName("diorite_sword").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
+			granite_sword = new ItemGraniteSword(ToolMaterial.STONE).setUnlocalizedName("granite_sword").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
 		
-		andesite_shovel = new ItemAndesiteShovel(ToolMaterial.STONE).setUnlocalizedName("andesite_shovel").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
-		diorite_shovel = new ItemDioriteShovel(ToolMaterial.STONE).setUnlocalizedName("diorite_shovel").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
-		granite_shovel = new ItemGraniteShovel(ToolMaterial.STONE).setUnlocalizedName("granite_shovel").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
+			andesite_shovel = new ItemAndesiteShovel(ToolMaterial.STONE).setUnlocalizedName("andesite_shovel").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
+			diorite_shovel = new ItemDioriteShovel(ToolMaterial.STONE).setUnlocalizedName("diorite_shovel").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
+			granite_shovel = new ItemGraniteShovel(ToolMaterial.STONE).setUnlocalizedName("granite_shovel").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
 		
-		andesite_axe = new ItemAndesiteAxe(ToolMaterial.STONE).setUnlocalizedName("andesite_axe").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
-		diorite_axe = new ItemDioriteAxe(ToolMaterial.STONE).setUnlocalizedName("diorite_axe").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
-		granite_axe = new ItemGraniteAxe(ToolMaterial.STONE).setUnlocalizedName("granite_axe").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
+			andesite_axe = new ItemAndesiteAxe(ToolMaterial.STONE).setUnlocalizedName("andesite_axe").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
+			diorite_axe = new ItemDioriteAxe(ToolMaterial.STONE).setUnlocalizedName("diorite_axe").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
+			granite_axe = new ItemGraniteAxe(ToolMaterial.STONE).setUnlocalizedName("granite_axe").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
 		
-		andesite_hoe = new ItemAndesiteHoe(ToolMaterial.STONE).setUnlocalizedName("andesite_hoe").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
-		diorite_hoe = new ItemDioriteHoe(ToolMaterial.STONE).setUnlocalizedName("diorite_hoe").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
-		granite_hoe = new ItemGraniteHoe(ToolMaterial.STONE).setUnlocalizedName("granite_hoe").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
+			andesite_hoe = new ItemAndesiteHoe(ToolMaterial.STONE).setUnlocalizedName("andesite_hoe").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
+			diorite_hoe = new ItemDioriteHoe(ToolMaterial.STONE).setUnlocalizedName("diorite_hoe").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
+			granite_hoe = new ItemGraniteHoe(ToolMaterial.STONE).setUnlocalizedName("granite_hoe").setCreativeTab(SimpleEnhancements.tabSimpleEnhancements);
+		
+			register();
 	}
 	
 	public static void register()

@@ -1,7 +1,8 @@
 package net.dotsilver.simpleenhancements;
 
-import net.dotsilver.simpleenhancements.init.SimpleEnhancementsItems;
+import net.dotsilver.simpleenhancements.init.ADGItems;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 
 public class SimpleEnhancementsTab extends CreativeTabs{
@@ -13,7 +14,11 @@ public class SimpleEnhancementsTab extends CreativeTabs{
 
 	@Override
 	public ItemStack getTabIconItem() {
-		return new ItemStack(SimpleEnhancementsItems.diorite_pickaxe);
+		if (Config.recipesADGTools) {
+			return new ItemStack(ADGItems.diorite_pickaxe);
+		} else {
+			return new ItemStack(Blocks.GRASS);
+		}
 	}
 	
 }
