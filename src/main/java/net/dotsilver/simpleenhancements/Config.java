@@ -24,6 +24,7 @@ public class Config {
 	public static boolean recipesMusicDiscs;
 	public static boolean breakableEndPortalFrame;
 	public static boolean pluckFeathers;
+	public static float pluckFeathersDamage;
 	
 	public static void loadConfig(File file) {
 		if (cfg == null) {
@@ -50,6 +51,7 @@ public class Config {
 		recipesMusicDiscs = cfg.get(CAT_GENERAL, "recipesMusicDiscs", true, "Add recipes for Music Discs.").setRequiresMcRestart(true).getBoolean();
 		breakableEndPortalFrame = cfg.get(CAT_GENERAL, "breakableEndPortalFrame", true, "Make End Portal Frames breakable.").setRequiresMcRestart(true).getBoolean();
 		pluckFeathers = cfg.get(CAT_GENERAL, "pluckFeathers", true, "Rightclicking on chicken gives you feathers. Pluck it!").setRequiresMcRestart(true).getBoolean();
+		pluckFeathersDamage = (float)cfg.get(CAT_GENERAL, "pluckFeathersDamage", 2.0, "Damage dealt to the chicken when rightclicked.", 0.0, 5.0).getDouble();
 		
 		if (cfg.hasChanged())
 			cfg.save();

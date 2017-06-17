@@ -1,5 +1,6 @@
 package net.dotsilver.simpleenhancements.event;
 
+import net.dotsilver.simpleenhancements.Config;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.init.SoundEvents;
@@ -21,7 +22,7 @@ public class RightClickChickenEvent {
 		
 		if (event.getTarget().getName().equals("Chicken") && event.getHand() == EnumHand.MAIN_HAND) {
 			if (!world.isRemote) {
-				event.getTarget().attackEntityFrom(DamageSource.GENERIC, 2.0f);
+				event.getTarget().attackEntityFrom(DamageSource.GENERIC, Config.pluckFeathersDamage);
 				//Mooooh...
 				if (mainhand_item.isEmpty()) {
 					//player.setHeldItem(hand, new ItemStack(Items.FEATHER));
