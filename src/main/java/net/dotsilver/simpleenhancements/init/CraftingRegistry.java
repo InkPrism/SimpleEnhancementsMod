@@ -145,5 +145,9 @@ public class CraftingRegistry {
 			GameRegistry.addRecipe(new ItemStack(Items.RECORD_11), "A", "B", 'A', new ItemStack(Items.RECORD_STAL), 'B', new ItemStack(Items.SHEARS));
 			GameRegistry.addRecipe(new ItemStack(Items.RECORD_11), "B", "A", 'A', new ItemStack(Items.RECORD_STAL), 'B', new ItemStack(Items.SHEARS));
 		}
+		if(Config.recipeOldBook) {
+			// Old Schools Book Recipes
+			GameRegistry.addRecipe(new ItemStack(Items.BOOK), "AAA", 'A', new ItemStack(Items.PAPER));
+		}
 	}
 }
